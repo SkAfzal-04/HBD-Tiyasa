@@ -24,12 +24,16 @@ const animationTimeline = () => {
     // split chars that needs to be animated individually
     const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
     const hbd = document.getElementsByClassName("wish-hbd")[0];
+    const hbd1 = document.getElementsByClassName("wish-hbd")[1];
 
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
         .split("")
         .join("</span><span>")}</span>`;
 
     hbd.innerHTML = `<span>${hbd.innerHTML
+        .split("")
+        .join("</span><span>")}</span>`;
+    hbd1.innerHTML = `<span>${hbd1.innerHTML
         .split("")
         .join("</span><span>")}</span>`;
 
@@ -224,7 +228,7 @@ const animationTimeline = () => {
         }, {
             scale: 1,
             rotationY: 0,
-            color: "#ff69b4",
+            color: "rgb(245, 16, 16)",
             ease: Expo.easeOut,
         },
         0.1,
