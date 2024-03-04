@@ -5,6 +5,11 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 
 .song {
@@ -129,6 +134,15 @@ body {
   right: -10%;
 }
 
+.profile-picture{
+  width: 30%;
+  border: 1px solid pink;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px 5px orange;
+  height: 55%;
+
+}
+
 .baloons img:nth-child(3n + 0) {
   left: 30%;
 }
@@ -206,8 +220,9 @@ body {
 .wish-hbd {
   font-size: 3em;
   margin: 0;
-  text-transform: uppercase;
+
 }
+
 
 .wish h5 {
   font-size: 2rem;
@@ -256,6 +271,9 @@ body {
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
     left: 32%;
+  }
+  .profile-picture{
+    width: 75%;
   }
 }
 
